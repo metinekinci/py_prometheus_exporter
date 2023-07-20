@@ -22,8 +22,6 @@ The script consists of three functions to collect CPU, memory, and disk metrics 
 
 ## Functions That Collect Metrics
 
-There are there function collect_cpu_metrics function collects CPU utilization metrics for each core of the system and updates the corresponding Prometheus gauge.
-
 ```python
 def collect_cpu_metrics(cpu_gauge):
     cpu_percent = psutil.cpu_percent(interval=1, percpu=True)
